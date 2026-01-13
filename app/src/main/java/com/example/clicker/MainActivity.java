@@ -10,8 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private int num = 0;
-
-
     private static final String LOG_TAG = "ClickerMainActivity";
 
     @Override

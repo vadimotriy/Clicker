@@ -16,8 +16,10 @@
         android:text="Клик"
 
         android:backgroundTint="@color/green"
-        android:textSize="30sp"
+        android:textSize="50sp"
         android:textColor="@color/white"
+        android:width="100pt"
+        android:height="100pt"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

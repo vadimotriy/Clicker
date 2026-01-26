@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Clicker</string>
+    <string name="button_text">Клик</string>
+    <string name="total_default">0</string>
+    <string name="today_default">0</string>
+    <string name="today_text">Кликов за сегодня:</string>
 </resources>

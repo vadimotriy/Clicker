@@ -9,7 +9,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private int num = 0;
+    private int clicksTotalAmount = 0;
+    private int clicksTodayAmount = 0;
     private static final String LOG_TAG = "ClickerMainActivity";
 
     @Override
@@ -19,15 +20,18 @@ public class MainActivity extends AppCompatActivity {
         Log.i(LOG_TAG, "Базовая настройка завершена");
 
         Button button = findViewById(R.id.button);
-        TextView textview = findViewById(R.id.textView);
+        TextView clicksTotal = findViewById(R.id.clicksTotal);
+        TextView clicksToday = findViewById(R.id.clicksToday);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i(LOG_TAG, "Клик");
-                ++num;
+                ++clicksTodayAmount;
+                ++clicksTotalAmount;
 
-                textview.setText(Integer.toString(num));
+                clicksTotal.setText(Integer.toString(clicksTodayAmount));
+                clicksToday.setText(Integer.toString(clicksTodayAmount));
             }
         });
     }
